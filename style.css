@@ -181,6 +181,75 @@ h1 {
 .nav .right-side .lapor-btn:hover{
     background-color: rgba(10, 81, 173, 0.262);
 }
+.mobileNav{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* background-color: #1d1d1d70; */
+    background-color: #1d1d1d00;
+    z-index: 101;
+    transition: .4s ease-in-out;
+    left: -110%;
+}
+.mobileNav .cover{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: white;
+    width: fit-content;
+    padding: 32px 24px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: 100vh;
+    width: 70vw;
+    max-width: 400px;
+    min-width: 256px;
+}
+.mobileNav .cover .topNavigation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.mobileNav .cover .topNavigation p{
+    font-size: 20px;
+    font-weight: bold;
+}
+.mobileNav .cover .topNavigation button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+.mobileNav .cover .bodyNavigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 16px 0;
+    margin: 16px 0;
+    border-top: 1px solid #1d1d1d25;
+    border-bottom: 1px solid #1d1d1d25;
+    width: 100%;
+    gap: 4px;
+}
+.mobileNav .cover .bodyNavigation a{
+    transition: .2s ease-in-out;
+}
+.mobileNav .cover .bodyNavigation a:hover{
+    opacity: 1;
+}
+.mobileNav .cover .footNavigation a{
+    transition: .2s ease-in-out;
+}
+.mobileNav .cover .footNavigation a:hover{
+    opacity: 1;
+}
 
 @media screen and (max-width : 1024px ) {
     .nav .nav-info{

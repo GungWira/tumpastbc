@@ -1,3 +1,31 @@
+const hamMenu = document.querySelector(".burger")
+const mobileNav = document.querySelector(".mobileNav")
+const closeBtn = document.querySelector(".close-btn")
+
+hamMenu.addEventListener("click", () => {
+    mobileNav.style.left = "0%"
+    setTimeout(() => {
+        mobileNav.style.backgroundColor = "#1d1d1d70"
+    }, 200);
+})
+
+mobileNav.addEventListener("click", (e) => {
+    if (e.target.classList.contains("mobileNav")){
+        mobileNav.style.backgroundColor = "#1d1d1d00"
+        setTimeout(() => {
+            mobileNav.style.left = "-110%"
+        }, 200);
+    }
+})
+
+closeBtn.addEventListener("click", (e) => {
+    mobileNav.style.backgroundColor = "#1d1d1d00"
+    setTimeout(() => {
+        mobileNav.style.left = "-110%"
+    }, 200);
+})
+
+
 const soals = document.querySelectorAll(".q");
 
 function Answear(event) {
