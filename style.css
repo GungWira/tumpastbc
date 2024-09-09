@@ -203,6 +203,17 @@ h1 {
         overflow-x: hidden;
     }
 }
+@media screen and (max-width : 676px) {
+    .nav .left-side{
+        flex: unset;
+    }
+    .nav .right-side{
+        flex: unset;
+    }
+    .nav .container{
+        justify-content: space-between;
+    }
+}
 /* Nav End */
 
 /* Hero Start */
@@ -365,6 +376,10 @@ h1 {
     }
     .hero .mid-hero{
         padding-top: 64px;
+    }
+    .nav .right-side .lapor-btn{
+        width: unset;
+        padding: 8px 32px;
     }
 }
 @media screen and (max-width : 676px) {
@@ -899,6 +914,11 @@ position: absolute;
         left: -12px;
     }
 }
+@media screen and (max-width : 562px) {
+    .textbp{
+        width: 100%;
+    }
+}
 /* Prosedur End */
 
 /* VE Start */
@@ -1283,7 +1303,6 @@ width: 100%;
     gap: 10px;
     align-items: center;
     flex-direction: row;
-    width: 400px;
 }
 .titfoot h2 {
     font-size: 32px;
@@ -1405,6 +1424,24 @@ align-items: center;
     }
     .bakput1 img, .bakput3 img, .kbakbox1 img, .kbakbox2 img, .bakput2 img{
         opacity: .4;
+    }
+    .titfoot h2{
+        font-size: 24px;
+    }
+    .titfoot .lkab img{
+        width: 64px;
+    }
+    .tfoot .titfoot{
+        align-items: center;
+    }
+    .titfoot h2{
+        margin-bottom: 0px;
+    }
+    .linkformman a{
+        font-size: 16px;
+    }
+    .rightbox .loskrin{
+        width: 24px;
     }
 }
 @media screen and (max-width : 676px) {
