@@ -455,6 +455,9 @@ h1 {
     .hero .mobile-hias img{
         width: 164px;
     }
+    .nav .container{
+        margin: 0 24px;
+    }
 }
 @media screen and (max-width : 562px) {
     .nav .left-side .logo img{
@@ -764,7 +767,7 @@ h1 {
     text-align: center;
     padding: 10px;
     justify-content: space-between;
-    padding: 20px;
+    padding: 24px;
     background-color: rgba(16, 110, 234, 1);
     background-repeat: no-repeat;
     background-position: center;
@@ -994,8 +997,15 @@ position: absolute;
     .leftp, .midp, .rightp{
         width: 100%;
     }
+    .semi-text{
+        font-size: 20px !important;
+        margin-top: 8px;
+    }
 }
 @media screen and (max-width : 676px) {
+    .prosedur{
+        padding: 0 24px;
+    }
     .mp{
         padding: 24px 0;
     }
@@ -1225,6 +1235,11 @@ table td , table th{
         margin-bottom: 12px;
     }
 }
+@media screen and (max-width : 676px) {
+    .faq{
+        padding: 0 24px;
+    }
+}
 /* FAQ End */
 
 /* Foot Start */
@@ -1247,7 +1262,7 @@ table td , table th{
     display:flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 24px;
     max-width: 1360px;
     width: 100%;
     background-color: rgba(16, 110, 234, 1);
@@ -1547,13 +1562,16 @@ align-items: center;
         padding: 48px 0px;
     }
     .titfoot h2{
-        font-size: 16px !important;
+        font-size: 20px !important;
     }
     .footfr h2{
         font-size: 14px;
     }
     .rightbox button{
         padding: 16px 32px;
+    }
+    .footfr{
+        padding: 28px 24px 16px 24px;
     }
 }
 /* Foot End */
