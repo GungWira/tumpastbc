@@ -72,6 +72,11 @@ h1 {
         margin-bottom: 4px;
     }
 }
+@media screen and (max-width : 769px) {
+    .titleFont{
+        font-size: 28px;
+    }
+}
 /* SET UP */
 
 /* START NAV */
@@ -554,7 +559,7 @@ h1 {
     }
     .gejala .body-gejala .left,
     .gejala .body-gejala .right{
-        width: 90%;
+        width: calc(100% - 64px);
     }
     .gejala .body-gejala .right{
         margin-left: 10%;
@@ -588,6 +593,35 @@ h1 {
     }
     .judul-gejala .image img{
         height: 28px;
+    }
+}
+@media screen and (max-width : 679px) {
+    .gejala .head-gejala .top-side .bk img{
+        width: 124px;
+    }
+    .gejala .head-gejala .top-side .bn img{
+        display: none;
+    }
+    .gejala .body-gejala .left .content-gejala, 
+    .gejala .body-gejala .right .content-gejala{
+     padding-left:0 ;   
+     padding-right:0 ;   
+    }
+    .gejala .body-gejala .left .content-gejala .top-side .left-side img{
+        height: 12px;
+    }
+    .gejala .body-gejala .left .content-gejala .top-side .left-side{
+        width: fit-content;
+    }
+    .gejala .body-gejala .left .content-gejala .top-side,
+    .gejala .body-gejala .right .content-gejala .top-side{
+        gap: 8px;
+    }
+    .gejala .body-gejala .right .content-gejala .top-side{
+        align-items: flex-start;
+    }
+    .gejala .body-gejala .right .content-gejala .top-side .right-side{
+        margin-top: 4px;
     }
 }
 @media screen and (max-width : 562px) {
@@ -885,6 +919,8 @@ position: absolute;
 .video{
     width: 100%;
     padding: 0 36px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -923,6 +959,27 @@ position: absolute;
     top: 0;
     left: 0;
     z-index: 30;
+}
+p.linkYt{
+    margin-top: 16px;
+}
+@media screen and (max-width : 864px) {
+    .hsve1, .hsve2{
+        width: 40%;
+    }
+    .hbve1 img, .hbve2 img{
+        width: 40%;
+    }
+}
+@media screen and (max-width : 562px) {
+    .video{
+        padding: 0px;
+    }
+    .vidiowrapve{
+        width: calc(100% - 48px);
+        border-radius: 8px;
+        aspect-ratio: 16 / 9;
+    }
 }
 /* VE End */
 
@@ -971,7 +1028,7 @@ position: absolute;
     display: flex;
     flex-direction: row;
     padding: 10px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: flex-start;
     font-weight: bold;
     width: 100%;
@@ -1009,6 +1066,11 @@ table ,th,td{
 }
 table td , table th{
     padding: 8px;
+}
+@media screen and (max-width : 712px) {
+    .botfaq{
+        flex-direction: column;
+    }
 }
 /* FAQ End */
 
